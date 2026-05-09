@@ -53,7 +53,7 @@ export default function OCRPanel({ onClose, language, userId, onSendToChat }: Pr
       form.append("language", LANG_CODE[language] || "en");
       form.append("user_id", userId);
 
-      const res = await fetch(`${API}/api/document/analyze`, { method: "POST", body: form });
+      const res = await fetch(`${API}/api/documents/analyze`, { method: "POST", body: form });
       const data = await res.json();
 
       if (!res.ok) throw new Error(data.detail || `Error ${res.status}`);
