@@ -24,7 +24,7 @@ try:
 except Exception as e:
     print(f"⚠️ Gemini unavailable: {e}")
 
-GEMINI_MODELS = ["gemini-2.0-flash", "gemini-1.5-flash", "gemini-pro"]
+GEMINI_MODELS = ["gemini-2.5-flash", "gemini-2.0-flash-001", "gemini-1.5-flash-latest"]
 
 # ── Bhashini ──────────────────────────────────────────────────────────────────
 INFERENCE_API_KEY = os.getenv(
